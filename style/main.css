@@ -25,10 +25,37 @@ a {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
     background: url(../style/img/bg-header.jpg);
     width: 1200px;
     height: 74px;
     margin: auto;
     border-radius: 10px;
     margin-top: 25px;
+}
+
+header a {
+    font-size: 1.5rem;
+    padding: 25px;
+}
+
+.navLeft a:first-child:hover {
+    border-radius: 10px 0 0 10px;
+}
+
+.navRight a:last-child:hover {
+    border-radius: 0 10px 10px 0;
+}
+
+a:hover {
+    background-color: #529395;
+    transition: background 0.5s ease;
+}
+
+.navLeft,
+.navRight {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
