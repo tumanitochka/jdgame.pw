@@ -42,7 +42,7 @@ header {
 
 header a {
     font-size: 1.5rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
     padding: 25px;
     z-index: 10;
 }
