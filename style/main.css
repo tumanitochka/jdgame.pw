@@ -47,17 +47,17 @@ header a {
     z-index: 10;
 }
 
+header a:hover {
+    background: #529395;
+    transition: background 0.5s ease;
+}
+
 .navLeft a:first-child:hover {
     border-radius: 10px 0 0 10px;
 }
 
 .navRight a:last-child:hover {
     border-radius: 0 10px 10px 0;
-}
-
-a:hover {
-    background: #529395;
-    transition: background 0.5s ease;
 }
 
 .navLeft,
@@ -74,4 +74,40 @@ a:hover {
 
 .logo {
     margin-left: -45rem;
+}
+
+.logo:hover {
+    filter: brightness(1.1);
+    transition: filter 0.5s ease;
+}
+
+.logo:active {
+    filter: brightness(1);
+    transition: filter 0.5s ease;
+}
+
+.btnStart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../style/img/btn-start.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    filter: brightness(0.9);
+    transform: rotate(-4.7deg);
+    margin: 115px 50px;
+    width: 243px;
+    height: 65px;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.btnStart:hover {
+    filter: brightness(1);
+    transition: filter 0.5s ease;
+}
+
+.btnStart:active {
+    filter: brightness(0.9);
+    transition: filter 0.5s ease;
 }
