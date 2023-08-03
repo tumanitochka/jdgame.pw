@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Phenomena;
+    src: url(../style/font/Phenomena.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,5 +15,20 @@ body {
 }
 
 body {
+    font-family: Phenomena;
     background-color: #d2d9e1;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header {
+    background: url(../style/img/bg-header.jpg);
+    width: 1200px;
+    height: 74px;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 25px;
 }
