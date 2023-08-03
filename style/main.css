@@ -12,6 +12,7 @@ html,
 body {
     background-color: #d9dfea;
     font-family: Phenomena;
+    transition: all 0.5 ease-in-out;
     width: 100%;
     height: 100%;
 }
@@ -91,9 +92,18 @@ header a:hover {
 }
 
 @keyframes breath {
-    0% {filter: brightness(0.8);}
-    50%{filter: brightness(1.2);}
-    100%{filter: brightness(0.8);}
+    0% {
+        filter: brightness(0.8);
+        transform: scale(1);
+    }
+    50%{
+        filter: brightness(1.1);
+        transform: scale(1.02);
+    }
+    100%{
+        filter: brightness(0.8);
+        transform: scale(1);
+    }
 }
 
 .btnStart {
@@ -120,4 +130,94 @@ header a:hover {
 .btnStart:active {
     filter: brightness(0.9);
     transition: filter 0.5s ease;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 1280px;
+    height: calc(100%);
+    margin: 280px auto;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.content {
+    width: 940px;
+    height: 900px;
+}
+
+.aside {
+    margin-top: 48px;
+    width: 320px;
+    height: 900px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../style/img/slider/01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 899px;
+    height: 320px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 0 14rem;
+    gap: 20px;
+}
+
+.label h2 {
+    text-transform: uppercase;
+    line-height: 2rem;
+    color: #138d8f;
+}
+
+.label p {
+    width: 420px;
+}
+
+.btnAside {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 1rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    background: rgb(91,149,149);
+    background: linear-gradient(0deg, rgba(91,149,149,1) 0%, rgba(155,213,215,1) 100%);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    font-size: 1.4rem;
+    width: 280px;
+    height: 70px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+    transition: filter 0.5s ease;
+}
+
+.video {
+    background-image: url(../style/img/video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    width: 280px;
+    height: 180px;
+    border-radius: 10px;
+    margin-top: 40px;
 }
