@@ -129,7 +129,7 @@ header a:hover {
 
 .btnStart:active {
     filter: brightness(0.9);
-    transition: filter 0.5s ease;
+    transition: filter 0.2s ease;
 }
 
 .main {
@@ -182,6 +182,7 @@ header a:hover {
 
 .label p {
     width: 420px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .btnAside {
@@ -193,17 +194,34 @@ header a:hover {
 
 .btn {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    gap: 10px;
     background: rgb(91,149,149);
     background: linear-gradient(0deg, rgba(91,149,149,1) 0%, rgba(155,213,215,1) 100%);
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.sld {
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+}
+
+.lgh {
+    justify-content: flex-end;
+    gap: 10px;
     font-size: 1.4rem;
     width: 280px;
     height: 70px;
-    text-transform: uppercase;
+}
+
+.rgh {
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 1.4rem;
+    width: 280px;
+    height: 70px;
 }
 
 .btn:hover {
@@ -211,13 +229,31 @@ header a:hover {
     transition: filter 0.5s ease;
 }
 
+.btn:active {
+    filter: brightness(1);
+    transition: filter 0.2s ease;
+}
+
 .video {
     background-image: url(../style/img/video.png);
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    filter: brightness(0.9);
     cursor: pointer;
+    border: none;
     width: 280px;
     height: 180px;
     border-radius: 10px;
     margin-top: 40px;
+}
+
+.video:hover {
+    filter: brightness(1.1);
+    transition: filter 0.5s ease;
+}
+
+.video:active {
+    filter: brightness(0.9);
+    transition: filter 0.2s ease;
 }
