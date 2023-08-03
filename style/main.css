@@ -19,9 +19,8 @@ body {
 .bg {
     background: url(../style/img/bg-screen.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     height: 650px;
-    z-index: -1;
 }
 
 a {
@@ -38,7 +37,6 @@ header {
     margin: auto;
     border-radius: 10px;
     margin-top: -625px;
-    z-index: 1;
 }
 
 header a {
@@ -67,23 +65,35 @@ header a:hover {
     gap: 40px;
 }
 
+.firstScreen {
+    width: 1280px;
+    margin: auto;
+}
+
 .hero {
-    margin-left: 370px;
-    margin-top: -92px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 482px;
+    position: relative;
+    top: -21.5rem;
 }
 
 .logo {
-    margin-left: -45rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 320px;
+    position: relative;
+    top: 5rem;
+    right: 25rem;
+    animation: breath 3s infinite ease-in-out;
 }
 
-.logo:hover {
-    filter: brightness(1.1);
-    transition: filter 0.5s ease;
-}
-
-.logo:active {
-    filter: brightness(1);
-    transition: filter 0.5s ease;
+@keyframes breath {
+    0% {filter: brightness(0.8);}
+    50%{filter: brightness(1.2);}
+    100%{filter: brightness(0.8);}
 }
 
 .btnStart {
@@ -95,7 +105,7 @@ header a:hover {
     background-size: 100%;
     filter: brightness(0.9);
     transform: rotate(-4.7deg);
-    margin: 115px 50px;
+    margin: -230px 80px;
     width: 243px;
     height: 65px;
     font-size: 2rem;
