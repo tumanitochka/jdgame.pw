@@ -152,6 +152,7 @@ header a:hover {
 
 .aside {
     margin-top: 48px;
+    margin-left: -40px;
     width: 320px;
     height: 900px;
 }
@@ -176,7 +177,7 @@ header a:hover {
 
 .label h2 {
     text-transform: uppercase;
-    line-height: 2rem;
+    line-height: 3rem;
     color: #138d8f;
 }
 
