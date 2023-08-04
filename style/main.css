@@ -115,7 +115,7 @@ header a:hover {
     background-size: 100%;
     filter: brightness(0.9);
     transform: rotate(-4.7deg);
-    margin: -230px 80px;
+    margin: -7em 2em;
     width: 243px;
     height: 65px;
     font-size: 2rem;
@@ -136,7 +136,7 @@ header a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 40px;
+    grid-column-gap: 0.5em;
     grid-row-gap: 0px;
     width: 1200px;
     height: calc(100%);
@@ -144,7 +144,6 @@ header a:hover {
 }
 
 .content {
-    margin-left: -40px;
     width: 900px;
     height: 900px;
 }
