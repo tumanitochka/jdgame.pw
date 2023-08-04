@@ -233,6 +233,31 @@ header a:hover {
     color: #00000050;
 }
 
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #138d8f;
+    color: #529395;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 20px;
+    height: 50px;
+    width: 900px;
+}
+
+.more:hover {
+    background: #138d8f;
+    color: #fff;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+.more:active {
+    background: none;
+    color: #529395;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
 .newFoot {
     display: flex;
     justify-content: space-between;
