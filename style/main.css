@@ -160,7 +160,7 @@ header a:hover {
     width: 280px;
 }
 
-.slider {
+.swiper-slide {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -173,10 +173,21 @@ header a:hover {
     height: 250px;
 }
 
-.slider img {
+.slidswiper-slideer img {
     margin-top: -70px;
 }
 
+
+.swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+    color: #00000050;
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+    color: #00000050;
+}
+  
 .label {
     display: flex;
     flex-direction: column;
