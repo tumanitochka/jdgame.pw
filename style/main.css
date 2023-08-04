@@ -139,18 +139,15 @@ header a:hover {
     grid-column-gap: 0.5em;
     grid-row-gap: 0px;
     width: 1200px;
-    height: calc(100%);
     margin: 280px auto;
 }
 
 .content {
     width: 900px;
-    height: 900px;
 }
 
 .aside {
     width: 300px;
-    height: 900px;
 }
 
 .slider {
