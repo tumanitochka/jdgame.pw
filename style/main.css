@@ -67,11 +67,6 @@ header a:hover {
     gap: 40px;
 }
 
-.firstScreen {
-    width: 1280px;
-    margin: auto;
-}
-
 .hero {
     display: flex;
     justify-content: center;
@@ -137,42 +132,43 @@ header a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 0px;
+    grid-column-gap: 40px;
     grid-row-gap: 0px;
-    width: 1280px;
+    width: 1200px;
     height: calc(100%);
     margin: 280px auto;
-    justify-content: space-between;
-    gap: 40px;
 }
 
 .content {
-    width: 940px;
+    margin-left: -40px;
+    width: 900px;
     height: 900px;
 }
 
 .aside {
     margin-top: 48px;
-    margin-left: -40px;
-    width: 320px;
+    width: 300px;
     height: 900px;
 }
 
 .slider {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-image: url(../style/img/slider/01.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 899px;
-    height: 320px;
+    width: 900px;
+    height: 250px;
+}
+
+.slider img {
+    margin-top: -70px;
 }
 
 .label {
     display: flex;
     flex-direction: column;
-    margin: 2rem 0 0 14rem;
     gap: 20px;
 }
 
